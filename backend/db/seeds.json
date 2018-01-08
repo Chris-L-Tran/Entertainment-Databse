@@ -19,12 +19,19 @@
     "genre": "3D Platform Adventure",
     "year": 2017,
     "rating": 10
-  }
+  },
   {
     "platform": "Nintendo Switch",
     "title": "The Legend Of Zelda: Breath of the Wild",
     "genre": "Action Adventure",
     "year": 2017,
     "rating": 10
-  }
+  },
+  {
+  "platform": "PS4",
+  "title": "Horizon Zero Dawn",
+  "genre": "Action RPG",
+  "year": 2017,
+  "rating": 10
+}
 ]
