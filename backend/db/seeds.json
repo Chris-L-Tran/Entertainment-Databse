@@ -1,0 +1,30 @@
+[
+  {
+    "platform": "PS4",
+    "title": "Persona 5",
+    "genre": "Turn Based Anime RPG",
+    "year": 2016,
+    "rating": 10
+  },
+  {
+    "platform": "PS4",
+    "title": "Nier: Automata",
+    "genre": "Action RPG",
+    "year": 2017,
+    "rating": 10
+  },
+  {
+    "platform": "Nintendo Switch",
+    "title": "Super Mario Odyssey",
+    "genre": "3D Platform Adventure",
+    "year": 2017,
+    "rating": 10
+  }
+  {
+    "platform": "Nintendo Switch",
+    "title": "The Legend Of Zelda: Breath of the Wild",
+    "genre": "Action Adventure",
+    "year": 2017,
+    "rating": 10
+  }
+]
