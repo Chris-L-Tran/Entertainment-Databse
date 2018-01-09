@@ -1,0 +1,20 @@
+{{#if game}}
+<h2> {{game.title}} is the best game made in {{game.year}}!!</h2>
+{{else}}
+<h2>That game couldn't be found!</h2>
+{{/if}}
+
+<h2>Update Information</h2>
+<form action='/games/{{game.title}}?_method=put' method='post'>
+  <input type='text' name='game[title]' value='{{game.title}}'>
+  <input type='text' name='game[platform]' value='{{game.platform}}'>
+  <input type='text' name='game[genre]' value='{{game.genre}}'>
+  <input type='text' name='game[year]' value='{{game.year}}'>
+  <input type='text' name='game[rating]' value='{{game.rating}}'>
+  <input type='submit' value='Update Game'>
+</form>
+
+<h2>Delete Game</h2>
+<form action='/games/{{game.name}}?_method=delete' method='post'>
+  <input type='submit' value='Delete'>
+</form>

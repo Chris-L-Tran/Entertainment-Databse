@@ -1,0 +1,16 @@
+<h2>{{games.length}} top Games of 2017</h2>
+{{#each games as |game index|}}
+<h3>
+  <a href='/games/{{game.title}}'>{{game.title}} for best game in {{game.year}}</a>
+</h3>
+{{/each}}
+
+<h2>Register New Top Game</h2>
+<form action='games' method='post'>
+  <input type='text' name='game[title]' value='{{game.title}}'>
+  <input type='text' name='game[platform]' value='{{game.platform}}'>
+  <input type='text' name='game[genre]' value='{{game.genre}}'>
+  <input type='text' name='game[year]' value='{{game.year}}'>
+  <input type='text' name='game[rating]' value='{{game.rating}}'>
+  <input type='submit' value='Submit'>
+</form>
