@@ -21,6 +21,11 @@ app.engine('.hbs', hbs({
   layoutsDir: 'views/',
   defaultLayout: 'layout-main'
 }))
+
+app.get('/', (req, res) => {
+  res.render('welcome')
+})
+
 // app.use('/controller', Controller)
 
 app.listen(PORT, () => {
