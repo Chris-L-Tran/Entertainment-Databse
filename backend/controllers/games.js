@@ -3,7 +3,7 @@ const Game = require('../db/schema')
 
 const router = express.Router()
 
-router.get('/', (req. res) => {
+router.get('/', (req, res) => {
   Game.find({})
   .then(games => {
     res.render('games-index', {
@@ -21,7 +21,7 @@ router.post('/', (req, res) => {
 
 router.get('/:name', (req, res) => {
   Game.findOne({name: req.params.name})
-  .then((candidate) => {
+  .then((game) => {
     res.render('games-show', {
       game: game
     })
@@ -52,7 +52,7 @@ router.post('/', (req, res) => {
 })
 
 router.put('/:name', (req, res) => {
-  Game.findOneAndUpdate({ name: req.params.name}, req.body.candidate, { new: true})
+  Game.findOneAndUpdate({name: req.params.name}, req.body.game, {new: true})
     .then((game) => {
       res.redirect(`/games/${game.name}`)
     })
